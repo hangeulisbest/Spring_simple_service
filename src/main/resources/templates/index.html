@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Service</title>
+</head>
+<body>
+    <h1>상품 서비스</h1>
+    <a href="/new">상품등록하기</a>
+    <form action="/products" method="get">
+        모든 상품 검색하기 :  (가격순 정렬 유무) <input type="checkbox" name="sorted"> <input type="submit" value="검색">
+    </form>
+
+    <form action="/products" method="get">
+        이름으로 검색하기 : <input type="text" name="name" > <input type="submit" value="검색">
+    </form>
+    <form action="/products" method="get">
+        가격으로 검색하기 : <input type="number" name="price" > <input type="submit" value="검색">
+    </form>
+    <form action="/delete" method="get">
+        이름으로 상품 제거하기: <input type="text" name="name"> <input type="submit" value="삭제하기">
+    </form>
+</body>
+</html>
